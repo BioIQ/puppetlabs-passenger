@@ -29,7 +29,7 @@ class passenger::params {
         $libruby              = 'libopenssl-ruby'
       }
     }
-    'redhat': {
+    'redhat','linux': {
       $passenger_package      = 'passenger'
       $gem_path               = '/usr/lib/ruby/gems/1.8/gems'
       $gem_binary_path        = '/usr/lib/ruby/gems/1.8/gems/bin'
