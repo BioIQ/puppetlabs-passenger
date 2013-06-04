@@ -93,7 +93,7 @@ class passenger (
         require => File['/etc/apache2/mods-available/passenger.conf'],
       }
     }
-    'redhat': {
+    'redhat','linux': {
       package { 'libcurl-devel':
         ensure => present,
         before => Exec['compile-passenger'],
